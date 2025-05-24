@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>SANGHA</title>
+    
+      <!-- Meta para redes sociales -->
+      <meta property="og:title" content="FINANZAS SALUDABLES" />
+      <meta property="og:description" content="Coaching financiero y herramientas para una vida financiera saludable y en equilibrio " />
+      <meta property="og:image" content="https://blomstfrisk.github.io/FINANZAS-SALUDABLES/images/logoazuladosintexto.png" />
+      <meta property="og:url" content="https://blomstfrisk.github.io/FINANZAS-SALUDABLES/" />
+      <meta name="twitter:card" content="summary_large_image" />
+    
+      <!-- Icono -->
+      <link rel="icon" href="favicon_hub_only_rounded.ico" type="image/x-icon" />
+      <link rel="icon" href="images/favicon (2).ico" type="image/x-icon" />
+    
+      <!-- Estilos personalizados -->
+      <link rel="stylesheet" href="style.css" />
+    
+      <!-- Fuente Outfit -->
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+      <!-- Tailwind CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                violeta: '#9676d8',
+                morado: '#6A1B9A',
+                fondo: '#FAF5FF',
+                bordo: '#a2263f',
+                celeste: '#0c6d99',
+                azul: '#1D3B6D',
+                berenjena: '#5c4554',
+                bordooscuro: '#552c5b',
+                violaceo: '#6a4b8e',
+                celestonoscuro: '#1394ad',
+                vino: '#80142f',
+                violetagrafito: '#3e2d4f',
+                lila: '#C587C5',
+                violaceoclaro: '#e0d1fa',
+
+                azulado: '#8EA4D2',
+                azulino: '#6279B8',
+                azulgris: '#49516F',
+                azulmarino: '#184E77', 
+                azulbase: '#1E6091',
+                azulinado: '#1A759F',
+                azulpetrol: '#168AAD',
+                azulverdoso: '#34A0A4',
+                verdepalta: '#6BAB6F',
+                verdepetroloscuro: '#036666',
+                verdepetroleo: '#14746F',
+                verdepetro: '#248277',
+                verdepetroclaro: '#469d89', 
+                verdeinglesclaro: '#3AB795',
+                verdementa: '#A0E8AF',
+                verdeingles: '#477E62',
+                verdepetroseco: '#86BAA1',
+                amarillooro: '#D7B04B',
+                amarillolimon: '#D9ED92',
+                amarillo: '#FFCF56',
+                fondocalido: '#FDFCFB',
+                cyanoscuroelegante: '#006D77',
+                turquesaprofundo: '#007C91',
+                verdepaltaoscuro: '#247864',
+                verdeolivaoscuro: '#2F6650',
+
+              },
+              fontSize: {
+                '2xl': '1.5rem',
+                '3xl': '1.875rem',
+                '4xl': '2.25rem',
+                '5xl': '3rem',
+                '6xl': '3.75rem',
+              },
+              fontWeight: {
+                normal: 400,
+                medium: 500,
+                bold: 700,
+              },
+              fontFamily: {
+                sans: ['Outfit', 'sans-serif'],
+              },
+            },
+          },
+        };
+      </script>
+
+    
+      <!-- Animaciones -->
+      <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        .animate-fade-in {
+          animation: fadeIn 1.2s ease-out forwards;
+        }
+    
+        .animate-fade-in-delay {
+          animation: fadeIn 1.2s ease-out 0.3s forwards;
+        }
+      </style>
+    </head>
+
+    <body class="bg-white text-[#222] font-sans pt-20 min-h-screen flex flex-col">
+
+    <!-- Compensa altura del menú fijo -->
+
+<nav class="fixed top-0 left-0 w-full bg-verdepetroloscuro text-white px-6 py-4 flex justify-between items-center shadow-md z-50">
+
+  
+  <!-- Contenedor izquierdo: logo + título -->
+  <div class="flex items-center gap-3">
+    <div class="bg-white flex items-center justify-center rounded p-4" style="height: 3.6rem; width: auto;">
+      <img src="images/logosanghacuadrado.png" alt="Logo SANGHA" class="h-[2.6rem] sm:h-[3.4rem] object-contain" />
+    </div>
+    <div>
+      <h1 class="text-xl font-bold">SANGHA - Cursos Asincrónicos</h1>
+    </div>
+  </div>
+
+  <!-- Botón a la derecha -->
+
+  <!-- Botón a la derecha -->
+
+  <div class="hidden md:flex items-center gap-4">
+    <a href="index.html" class="bg-turquesaprofundo px-4 py-2 rounded hover:bg-verdeingles font-semibold">Inicio</a>
+     
+  <a href="capacitacionesdisponibles.html" class="bg-turquesaprofundo px-4 py-2 rounded hover:bg-verdeingles font-semibold">
+    Volver a  SANGHA
+  </a>
+
+   <a href="unidadincubadora.html" class="bg-turquesaprofundo px-4 py-2 rounded hover:bg-verdeingles font-semibold">
+    Volver a FINANZAS SALUDABLES
+  </a>
+  </div>
+ 
+</nav>
+
+  <main class="flex-1 p-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-[#3e2d4f] mb-6">Bienvenido a la oferta de cursos asincrónicos de SANGHA</h2>
+      <p class="text-lg text-gray-700 mb-4">Aquí encontrarás una variedad de cursos diseñados para potenciar tus habilidades emprendedoras y áreas relacionadas.</p>
+     
+      <h3 class="text-xl font-semibold text-[#3e2d4f] mb-4">Tus cursos disponibles:</h3>
+
+      <div class="space-y-6">
+<section>
+     <!-- Curso 1 -->
+<div class="flex flex-col md:flex-row gap-4 bg-white border rounded-xl shadow hover:shadow-lg p-6">
+  <div class="md:w-1/2 flex flex-col items-center">
+    <div class="w-full max-w-[300px]">
+      <img src="images/IA Aplicada (2).png" alt="Flyer del curso" class="w-full rounded" />
+      <a href="cursofinanzas.html" class="inline-block text-center bg-verdepetroloscuro text-white py-2 w-full rounded mt-4 hover:bg-verdeingles">Acceder al curso</a>
+    </div>
+  </div>
+  <div class="md:w-1/2 flex flex-col justify-center">
+    <h4 class="text-lg font-bold text-azulbase mb-2">Finanzas para Emprendedores</h4>
+    <p class="text-sm text-gray-700"> Profundización en herramientas financieras aplicadas a emprendimientos, con foco en la planificación económica, la gestión del flujo de fondos y la toma de decisiones estratégicas. Se exploran metodologías para el análisis de costos, fijación de precios y evaluación de la rentabilidad. El curso incluye el uso de herramientas digitales para el diseño de presupuestos, control de gastos y proyecciones financieras, así como criterios clave para la organización financiera y sostenibilidad económica de proyectos emprendedores.
+</p>
+    <p class="text-sm text-gray-700">El curso está orientado a estudiantes, emprendedores y profesionales de la industria y diversas profesiones que requieran ordenar sus finanzas.</p>  
+  </div>
+</div>
+
+
+<!-- Curso 2 -->
+<div class="flex flex-col md:flex-row gap-4 bg-white border rounded-xl shadow hover:shadow-lg p-6">
+  <div class="md:w-1/2 flex flex-col items-center">
+    <div class="w-full max-w-[300px]">
+      <img src="images/IA Aplicada (1).png" alt="Flyer del curso" class="w-full rounded" />
+      <a href="cursosolid.html" class="inline-block text-center bg-verdepetroloscuro text-white py-2 w-full rounded mt-4 hover:bg-verdeingles">Acceder al curso</a>
+    </div>
+  </div>
+  <div class="md:w-1/2 flex flex-col justify-center">
+    <h4 class="text-lg font-bold text-azulbase mb-2">Solid Works - Modelado 3D</h4>
+    <p class="text-sm text-gray-700">Fundamentos del diseño mecánico y modelado 3D en SolidWorks. Aplicación de la norma IRAM 14001 en proyectos técnicos. Cada decisión de diseño influye en la eficiencia del producto y su viabilidad industrial. El dominio de SolidWorks es clave para insertarse en el mercado laboral actual y responder a las demandas del sector productivo.</p>
+    <br>
+    <br>
+    <p class="text-sm text-gray-700">El curso está orientado a estudiantes, emprendedores y profesionales de la industria, el diseño industrial, diseño gráfico, arquitectura y áreas afines.</p>  
+  </div>
+</div>
+
+<!-- Curso 3 -->
+<div class="flex flex-col md:flex-row gap-4 bg-white border rounded-xl shadow hover:shadow-lg p-6">
+  <div class="md:w-1/2 flex flex-col items-center">
+    <div class="w-full max-w-[300px]">
+      <img src="images/IA Aplicada (3).png" alt="Flyer del curso" class="w-full rounded" />
+      <a href="cursoia.html" class="inline-block text-center bg-verdepetroloscuro text-white py-2 w-full rounded mt-4 hover:bg-verdeingles">Acceder al curso</a>
+    </div>
+  </div>
+  <div class="md:w-1/2 flex flex-col justify-center">
+    <h4 class="text-lg font-bold text-azulbase mb-2">IA Aplicada</h4>
+    <p class="text-sm text-gray-700">
+      Estrategias para integrar la inteligencia artificial como una herramienta clave en el proceso de diseño y desarrollo de un nuevo emprendimiento. Aplicación de IA para validar conceptos, optimizar tiempos y tareas repetitivas, anticipar errores y mejorar la toma de decisiones. Su implementación permite acelerar tiempos de desarrollo, reducir costos y aumentar la competitividad en el entorno laboral actual.
+    </p>
+    <br>
+    <p class="text-sm text-gray-700">El curso está orientado a estudiantes, emprendedores y profesionales de la industria y diversas profesiones que requieran aprender IA desde cero.</p>  
+  </div>
+</div>
+
+<!-- Curso 4 -->
+<div class="flex flex-col md:flex-row gap-4 bg-white border rounded-xl shadow hover:shadow-lg p-6">
+  <div class="md:w-1/2 flex flex-col items-center">
+    <div class="w-full max-w-[300px]">
+      <img src="images/IA Aplicada (4).png" alt="Flyer del curso" class="w-full rounded" />
+      <a href="cursocarteras.html" class="inline-block text-center bg-verdepetroloscuro text-white py-2 w-full rounded mt-4 hover:bg-verdeingles">Acceder al curso</a>
+    </div>
+  </div>
+  <div class="md:w-1/2 flex flex-col justify-center">
+    <h4 class="text-lg font-bold text-azulbase mb-2">Carteras y Accesorios</h4>
+    <p class="text-sm text-gray-700"> Introducción al diseño de carteras y accesorios con enfoque en selección de materiales, durabilidad, y análisis del ciclo de vida del producto. Se abordan conceptos de sostenibilidad aplicados al diseño, considerando procesos de producción responsables, eficiencia en el uso de recursos y posibilidades de reciclado o reutilización. El curso combina creatividad con criterios técnicos y ambientales, preparando al estudiante para desarrollar productos innovadores y conscientes del impacto ambiental dentro del mercado actual.
+</p>
+    <p class="text-sm text-gray-700">El curso está orientado a estudiantes, emprendedores y profesionales de la industria, el diseño industrial, diseño gráfico, arquitectura y áreas afines.</p>  
+  </div>
+</div>
+
+<!-- Curso 5 -->
+<div class="flex flex-col md:flex-row gap-4 bg-white border rounded-xl shadow hover:shadow-lg p-6">
+  <div class="md:w-1/2 flex flex-col items-center">
+    <div class="w-full max-w-[300px]">
+      <img src="images/IA Aplicada (5).png" alt="Flyer del curso" class="w-full rounded" />
+      <a href="cursofabricaciond.html" class="inline-block text-center bg-verdepetroloscuro text-white py-2 w-full rounded mt-4 hover:bg-verdeingles">Acceder al curso</a>
+    </div>
+  </div>
+  <div class="md:w-1/2 flex flex-col justify-center">
+    <h4 class="text-lg font-bold text-azulbase mb-2">Fabricación Digital</h4>
+    <p class="text-sm text-gray-700"> Profundización del uso de herramientas digitales aplicadas al diseño de productos con foco en tecnologías de fabricación digital como la impresión 3D. Se exploran metodologías para el desarrollo de prototipos funcionales, validación de diseños mediante fabricación aditiva y optimización de piezas para impresión. El curso incluye el manejo de software de modelado 3D, preparación de archivos STL y criterios técnicos para la selección de materiales según requerimientos funcionales y productivos. Es necesario saber el manejo de archivos
+</p>
+    <p class="text-sm text-gray-700">El curso está orientado a estudiantes, emprendedores y profesionales de la industria, el diseño industrial, diseño gráfico, arquitectura y áreas afines.</p>  
+  </div>
+</div>
+
+<!-- Curso 6-9 -->
+<div class="flex flex-col md:flex-row gap-4 bg-white border rounded-xl shadow hover:shadow-lg p-6">
+  <div class="md:w-1/2 flex flex-col items-center">
+    <div class="w-full max-w-[300px]">
+      <img src="ruta-del-flyer.jpg" alt="Flyer del curso" class="w-full rounded" />
+      <a href="#" class="inline-block text-center bg-verdepetroloscuro text-white py-2 w-full rounded mt-4 hover:bg-verdeingles">Acceder al curso</a>
+    </div>
+  </div>
+  <div class="md:w-1/2 flex flex-col justify-center">
+    <h4 class="text-lg font-bold text-azulbase mb-2">Próximos Cursos</h4>
+    <p class="text-sm text-gray-700">Estate atento a nuestra oferta de cursos y capacitaciones certificadas.</p>
+  </div>
+  </div>
+
+</div>
+</section>
+</main>
+
+   
+  <!--PREFOOTER -->
+
+<section class="bg-verdepetroloscuro text-white py-10 px-4 font-outfit">
+  <!-- Grid superior -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
+    <!-- CONSULTORÍA -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">CONSULTORÍA</h2>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Finanzas</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías a Emprendedores</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Gestión</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Diseño</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Comunicación</a></li>
+      </ul>
+    </div>
+
+    <!-- REDES -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">REDES</h2>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://www.instagram.com/finanzas.saludables.ar" target="_blank" class="hover:text-verdementa transition-colors">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="mt-4 text-sm leading-relaxed">
+        <p>La Plata, Argentina</p>
+        <p><a href="mailto:finanzas.saludables.emprende@gmail.com" class="hover:text-verdementa transition-colors">finanzas.saludables.emprende@gmail.com</a></p>
+        <p><a href="tel:+5492215738117" class="hover:text-verdementa transition-colors">+54 9221 573 8117</a></p>
+      </div>
+    </div>
+
+    <!-- SECCIONES -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">SECCIONES</h2>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:text-verdementa transition-colors">SANGHA</a></li>
+        <li><a href="index.html#estudios" class="hover:text-verdementa transition-colors">Cursos</a></li>
+        <li><a href="index.html#estudios" class="hover:text-verdementa transition-colors">Servicios</a></li>
+        <li><a href="index.html#estudios" class="hover:text-verdementa transition-colors">Equipo</a></li>
+        <li><a href="index.html#estudios" class="hover:text-verdementa transition-colors">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- LOGO -->
+    <div class="flex items-center justify-center">
+      <div class="bg-white flex items-center justify-center rounded p-4 transition-transform duration-300 hover:scale-105" style="height: 9rem;">
+        <img src="images/logofsbold.png" alt="Logo FS" class="w-auto h-32" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Línea y grid inferior -->
+  <div class="max-w-7xl mx-auto border-t-4 border-verdementa mt-10 pt-6 grid grid-cols-1 md:grid-cols-4 gap-4 text-xs text-left">
+    <a href="politicasdeprivacidad.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Política de privacidad</a>
+    <a href="politicasdecookies.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Política de Cookies</a>
+    <a href="terminosycondiciones.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Términos y condiciones</a>
+    <p>Finanzas Saludables 2025 © Todos los derechos reservados</p>
+  </div>
+</section>
+
+
+
+   <!-- FOOTER -->
+<footer class="bg-black text-white text-center py-2">
+  <div class="flex justify-center items-center gap-6 mb-4 flex-wrap">
+    <div class="bg-white flex items-center justify-center rounded p-4" style="height: 4rem; width: auto;">
+    <img src="images/logo-bloms.png" alt="Logo Bloms" class="w-12 sm:w-16 h-auto" />
+  </div>
+  <p class="mb-2">© 2025 BLÖMS CONSULTORA todos los derechos reservados. Responsable de DISEÑO DE CONCEPTO, GESTION EMPRENDIMIENTO Y DISEÑO WEB</p>
+ 
+</footer>
+
+<!-- JS para abrir/cerrar el menú en móvil -->
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      const icon = document.getElementById('menu-icon');
+  
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+        menu.classList.toggle('flex-col');
+        menu.classList.toggle('absolute');
+        menu.classList.toggle('top-full');
+        menu.classList.toggle('left-0');
+        menu.classList.toggle('bg-[#3e2d4f]');
+        menu.classList.toggle('w-full');
+        menu.classList.toggle('p-4');
+        menu.classList.toggle('shadow-md');
+        menu.classList.toggle('z-40');
+  
+        // Cambiar icono
+        if (menu.classList.contains('hidden')) {
+          icon.innerHTML = '&#9776;'; // ☰
+        } else {
+          icon.innerHTML = '&#10005;'; // ✖
+        }
+      });
+    });
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+    } else {
+      menu.classList.add('hidden');
+    }
+  });
+  </script>
+
+<script>
+  document.getElementById('contactoMail').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombreUsuario')?.value || '[Nombre]';
+
+    const asunto = 'Consulta sobre el Coaching Finanzas Saludables';
+    const cuerpo = `Hola, me comunico para realizar una consulta sobre la Comunidad Finanzas Saludables.%0A%0AMi pregunta es:%0A%0AQuedo atento/a a su respuesta.%0A%0AMuchas gracias.%0A%0ASaludos,%0A${encodeURIComponent(nombre)}`;
+
+    const mailtoLink = `mailto:finanzas.saludables.emprende@gmail.com?subject=${encodeURIComponent(asunto)}&body=${cuerpo}`;
+
+    window.location.href = mailtoLink;
+  });
+</script>
+
+ 
+  </body>
+</html>
+
+
+
+

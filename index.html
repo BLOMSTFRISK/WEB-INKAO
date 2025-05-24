@@ -1,0 +1,607 @@
+ 
+ <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>FINANZAS SALUDABLES</title>
+    
+      <!-- Meta para redes sociales -->
+      <meta property="og:title" content="FINANZAS SALUDABLES" />
+      <meta property="og:description" content="Coaching financiero y herramientas para una vida financiera saludable y en equilibrio " />
+      <meta property="og:image" content="https://blomstfrisk.github.io/FINANZAS-SALUDABLES/images/logoazuladosintexto.png" />
+      <meta property="og:url" content="https://blomstfrisk.github.io/FINANZAS-SALUDABLES/" />
+      <meta name="twitter:card" content="summary_large_image" />
+    
+      <!-- Icono -->
+      <link rel="icon" href="favicon_hub_only_rounded.ico" type="image/x-icon" />
+      <link rel="icon" href="images/favicon_redondeado.png" type="image/x-icon" />
+    
+      <!-- Estilos personalizados -->
+      <link rel="stylesheet" href="style.css" />
+    
+      <!-- Fuente Outfit -->
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+      <!-- Tailwind CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                violeta: '#9676d8',
+                morado: '#6A1B9A',
+                fondo: '#FAF5FF',
+                bordo: '#a2263f',
+                celeste: '#0c6d99',
+                azul: '#1D3B6D',
+                berenjena: '#5c4554',
+                bordooscuro: '#552c5b',
+                violaceo: '#6a4b8e',
+                celestonoscuro: '#1394ad',
+                vino: '#80142f',
+                violetagrafito: '#3e2d4f',
+                lila: '#C587C5',
+                violaceoclaro: '#e0d1fa',
+
+                azulado: '#8EA4D2',
+                azulino: '#6279B8',
+                azulgris: '#49516F',
+                azulmarino: '#184E77', 
+                azulbase: '#1E6091',
+                azulinado: '#1A759F',
+                azulpetrol: '#168AAD',
+                azulverdoso: '#34A0A4',
+                verdepalta: '#6BAB6F',
+                verdepetroloscuro: '#036666',
+                verdepetroleo: '#14746F',
+                verdepetro: '#248277',
+                verdepetroclaro: '#469d89', 
+                verdeinglesclaro: '#3AB795',
+                verdementa: '#A0E8AF',
+                verdeingles: '#477E62',
+                verdepetroseco: '#86BAA1',
+                amarillooro: '#D7B04B',
+                amarillolimon: '#D9ED92',
+                amarillo: '#FFCF56',
+                fondocalido: '#FDFCFB',
+                cyanoscuroelegante: '#006D77',
+                turquesaprofundo: '#007C91',
+
+              },
+              fontSize: {
+                '2xl': '1.5rem',
+                '3xl': '1.875rem',
+                '4xl': '2.25rem',
+                '5xl': '3rem',
+                '6xl': '3.75rem',
+              },
+              fontWeight: {
+                normal: 400,
+                medium: 500,
+                bold: 700,
+              },
+              fontFamily: {
+                sans: ['Outfit', 'sans-serif'],
+              },
+            },
+          },
+        };
+      </script>
+
+    
+      <!-- Animaciones -->
+      <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        .animate-fade-in {
+          animation: fadeIn 1.2s ease-out forwards;
+        }
+    
+        .animate-fade-in-delay {
+          animation: fadeIn 1.2s ease-out 0.3s forwards;
+        }
+      </style>
+    </head>
+
+      
+    
+    <body class="bg-white text-[#222] font-sans pt-20"> <!-- Compensa altura del menú fijo -->
+    
+<!-- NAV RESPONSIVE CON MENÚ DESPLEGABLE -->
+
+
+  <nav class="fixed top-0 left-0 right-0 bg-white text-white shadow-md z-50 px-6 py-3 flex items-center justify-between">
+  <div class="flex items-center gap-2 text-lg sm:text-xl font text-verdepetroleo">
+    
+    <!-- Logo -->
+    <a href="https://www.instagram.com/verodiazarive/?hl=es-la" target="_blank" rel="noopener noreferrer" class="hover:underline">
+      <img src="./images/logoazuladosintexto.png" alt="LAD Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain" />
+    </a>
+
+        <!-- Título -->
+      <a href="index.html#fs" class="block w-full py-1 hover:text-azulino">FINANZAS SALUDABLES</a>
+    
+  </div>
+
+ 
+    <!-- Botón hamburguesa visible solo en sm y md -->
+    <div class="lg:hidden">
+      <button id="menu-toggle" class="text-white text-3xl focus:outline-none">
+        <span id="menu-icon">&#9776;</span>
+      </button>
+    </div>
+  
+    <!-- Menú visible en LG y desplegable en SM/MD -->
+    <ul id="menu" class="hidden lg:flex lg:flex-row items-start lg:items-center gap-4 text-base font text-verdepetroleo">
+    
+      <li><a href="#sobre" class="block w-full py-1 hover:text-azulino">Sobre FINANZAS SALUDABLES</a></li>
+      <li><a href="#estudios" class="block w-full py-1 hover:text-azulino">Sobre SANGHA</a></li>
+      <li><a href="logincursos.html" target="_blank" rel="noopener noreferrer" class="block w-full py-1 hover:text-azulino">SANGHA Web</a></li>
+      
+      <li>
+  <a id="contactoMail" href="#" 
+     class="block w-full py-1 hover:text-azulino flex items-center space-x-2">
+    <i class="fas fa-envelope"></i>
+    <span>Contacto</span>
+  </a>
+</li>
+      <li class="flex flex-row gap-2 mt-2 lg:mt-0">
+        <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+          <img src="./images/ar.png" alt="Español" class="w-4 h-4 rounded-sm" />
+        </a>
+        <a href="indexen.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+          <img src="./images/us.png" alt="English" class="w-4 h-4 rounded-sm" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- HERO principal con texto y logo al costado -->
+
+  <section 
+  id="fs"
+  class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-20 gap-12"
+>
+  <!-- Texto -->
+  <div class="md:w-1/2 text-center md:text-left">
+    <h2 class="text-5xl md:text-7xl text-azulino font-bold mb-2">FINANZAS SALUDABLES</h2>
+    <h2 class="text-5xl md:text-5xl text-azulino font-bold mb-6 leading-tight">COACHING FINANCIERO</h2>
+
+    <p class="text-lb text-verdepetroloscuro mb-4">
+      "Tus finanzas pueden ser sostenibles, saludables y positivas, porque nuestro enfoque de coaching es consciente, equilibrado y orientado al bienestar integral. No se trata solo de números, sino de una relación armoniosa con el dinero, que te permita vivir con tranquilidad, tomar decisiones informadas y alinear tus recursos con tus verdaderos valores y objetivos de vida. Te acompañamos en un proceso de transformación personal y financiera, donde el equilibrio, la claridad y la sostenibilidad son pilares fundamentales."
+    </p>
+    <p class="text-xl text-azulmarino mb-8">
+      <strong> Te invitamos a que conozcas nuestro espacio.</strong>
+    </p>
+
+   <!-- Botones en fila -->
+<div class="grid grid-cols-4 gap-4 max-w-4xl mx-auto md:mx-0 mt-6">
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
+    SANGHA
+  </a>
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
+    CURSOS
+  </a>
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
+    SERVICIOS
+  </a>
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
+    EDICIONES
+  </a>
+</div>
+</div>
+
+  <!-- Logo -->
+  <div class="md:w-1/2 flex justify-center">
+    <img src="images/logoazuladosintexto.png" alt="Logo Finanzas Saludables" class="w-full max-w-lg" />
+  </div>
+</section>
+
+ 
+  
+  <!-- Animaciones personalizadas -->
+  <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .animate-fade-in {
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+  
+    .animate-fade-in-delay {
+      animation: fadeIn 1.2s ease-out 0.3s forwards;
+    }
+  </style>
+
+  <!-- Sobre -->
+
+   <section id="sobre" class="py-20 px-6 bg-verdepalta text-center">
+  <div class="mx-auto px-6 py-20 bg-verdepetroloscuro rounded-2xl max-w-3xl">
+    <h2 class="text-5xl text-white font-semibold mb-6">Sobre Finanzas Saludables</h2>
+     <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+    <div class="text-white text-lg leading-relaxed space-y-6 text-justify sm:text-center">
+      <p><strong>FINANZAS SALUDABLES</strong> es un programa de coaching financiero pensado para acompañarte en la transformación de tu relación con el dinero, tus decisiones económicas y el desarrollo estratégico de tus recursos.</p>
+      <p>Nace como un espacio de aprendizaje, acompañamiento y acción concreta, con múltiples ediciones orientadas a distintos públicos. En esta edición especial, está dirigido a <strong>emprendedores, profesionales independientes, cooperativas y pequeñas empresas</strong>, que buscan ordenar sus números, tomar decisiones conscientes y construir un camino financiero sostenible.</p>
+      <p>Creemos que unas <strong>finanzas claras, ordenadas y alineadas con tus valores</strong> son clave para que cualquier proyecto crezca de forma saludable. Por eso, este programa integra herramientas prácticas, análisis personalizados, dinámicas grupales y asesoramiento individual, todo dentro de una comunidad que comparte experiencias, desafíos y soluciones.</p>
+      <p>Nuestra propuesta combina el enfoque técnico con la contención emocional, porque entendemos que <em>gestionar el dinero también es gestionar miedos, hábitos y creencias</em>. Y lo hacemos desde una mirada empática, profesional y cercana.</p>
+      <p><strong>FINANZAS SALUDABLES – Edición Emprendedores</strong> te invita a tomar el control de tus finanzas, con claridad, estrategia y propósito. Para que tu emprendimiento no solo sobreviva, sino que crezca, se ordene y prospere en el tiempo.</p>
+      <p>Ofrecemos un espacio para diagnosticar, aprender, diseñar y accionar. Porque unas finanzas saludables no son un lujo, son una base firme sobre la que podés construir el futuro que querés.</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-8">
+    <a href="formulario.html"
+       target="_blank" rel="noopener noreferrer"
+       class="inline-block bg-verdeingles text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-verdeinglesclaro transition">
+      Quiero formar parte de la comunidad
+    </a>
+  </div>
+</section>
+
+   <!-- Sección de estudios -->
+<section id="estudios" class="py-16 px-6 bg-azulverdoso">
+  <h2 class="text-5xl font-semibold text-center mb-16 text-white">LO QUE TENEMOS PARA OFRECERTE...</h2>
+
+  <div class="space-y-12 max-w-6xl mx-auto">
+
+     <!-- SANGHA -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepetroleo hover:scale-105 transition">
+        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+          <div class="w-20 h-20 flex items-center justify-center">
+            <i class="fas fa-spa text-[5rem]"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold mb-1">SANGHA</h3>
+        <p class="text-m text-white/80 mb-4">Suscribite a la comunidad de emprendedores que potencia tu crecimiento.</p>
+        <a href="unidadsangha.html" target="_blank" class="bg-white text-verdepetroleo font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+          Ir al sitio
+        </a>
+      </div>
+      <div class="text-white text-lg leading-relaxed">
+        <p>En nuestra comunidad encontrarás inspiración, una red de apoyo genuina y experiencias compartidas que enriquecen tu camino. La Sangha es mucho más que un grupo: es un espacio vivo, dinámico y amoroso, pensado para nutrir tu motivación, acompañarte en los desafíos y fortalecer tu conexión con otros emprendedores que, como vos, buscan crecer de manera consciente y sostenible. Aquí podrás compartir tus logros, dudas y aprendizajes, sabiendo que siempre vas a tener un lugar donde ser escuchado, impulsado y comprendido.
+        </p>
+        </div>
+     </div>
+
+
+    <!-- EQUIPO -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdeingles hover:scale-105 transition">
+        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+          <div class="w-16 h-16 flex items-center justify-center">
+            <i class="fas fa-people-group text-[5rem]"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold mb-1">EQUIPO DE TRABAJO</h3>
+        <p class="text-m text-white/80 mb-4">Conocé a los profesionales que conforman el equipo de Vero.</p>
+        <a href="unidadsangha.html#equipoprofesionales" target="_blank" class="bg-white text-verdeingles font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+          Conocenos
+        </a>
+      </div>
+      <div class="text-white text-lg leading-relaxed">
+        <p> Detrás de cada servicio y propuesta hay un equipo comprometido, humano y apasionado que trabaja con un propósito claro: acompañarte en la construcción de un bienestar financiero real, consciente y duradero. Cada integrante aporta su mirada, experiencia y vocación para ofrecerte un enfoque integral, cercano y personalizado. Conocelos, descubrí cómo trabajan en conjunto y por qué forman una red sólida que te impulsa a tomar decisiones más informadas, equilibradas y alineadas con tus valores y objetivos.
+    </p>
+        </div>
+     </div> 
+
+
+
+    <!-- CURSOS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepalta hover:scale-105 transition">
+        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+          <div class="w-16 h-16 flex items-center justify-center">
+            <i class="fas fa-chalkboard-teacher text-white text-[4.4rem]"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold mb-1">CURSOS</h3>
+        <p class="text-m text-white/80 mb-4">Profundiza conocimientos en finanzas, inversiones, ecommerce, gestión y diseño de productos.</p>
+        <a href="cursossangha.html" target="_blank" class="bg-white text-verdepalta font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+          Ir al sitio
+        </a>
+      </div>
+      <div class="text-white text-lg leading-relaxed">
+        <p>Estos cursos están diseñados para acompañarte en cada etapa de tu camino emprendedor, brindándote las herramientas necesarias para profesionalizar y fortalecer tu proyecto. Ya sea que estés dando tus primeros pasos o que tengas un emprendimiento consolidado, siempre hay nuevas habilidades, enfoques y conocimientos que pueden marcar la diferencia. Nuestra propuesta formativa combina teoría accesible, práctica aplicada y una mirada integral que pone en el centro tu crecimiento personal y profesional. Porque creemos que emprender también es una forma de desarrollo humano.
+    </p>
+        </div>
+     </div>
+
+
+    <!-- ASESORIAS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepetroseco hover:scale-105 transition">
+        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+          <div class="w-16 h-16 flex items-center justify-center">
+            <i class="fas fa-handshake text-[4.4rem]"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold mb-1">ASESORÍAS PERSONALIZADAS</h3>
+        <p class="text-m text-white/80 mb-4">Consultoría y acompañamiento para emprendedores y empresas.</p>
+        <a href="unidadsangha.html#equipoprofesionales" target="_blank" class="bg-white text-verdepetroseco font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+          Agendá tu turno
+        </a>
+      </div>
+      <div class="text-white text-lg leading-relaxed">
+        <p>  Trabajamos de manera personalizada, uno a uno, para comprender en detalle tu situación financiera actual, tus desafíos y tus metas. A través de un enfoque cercano y sin juicios, te ayudamos a tomar decisiones más claras, seguras y alineadas con tus verdaderos objetivos. Ya sea que necesites ordenar tus finanzas, planificar inversiones, salir de deudas o simplemente ganar mayor conciencia sobre tus hábitos económicos, nuestro acompañamiento está pensado para empoderarte, brindarte claridad y construir un camino sostenible hacia el bienestar financiero.  </p>
+        </div>
+     </div>
+
+
+      </div>
+</section>
+
+   
+
+
+    
+<!-- Comunidad -->
+<section id="comunidad" class="py-20 px-6 bg-verdeingles text-center">
+  <h2 class="text-5xl font-semibold mb-6 text-white">Sumate a FINANZAS SALUDABLES</h2>
+  <p class="max-w-xl mx-auto mb-6 text-lg text-white">
+    Recibí recursos, novedades y muchas cosas más sobre nuestro ecosistema emprendedor.
+  </p>
+
+  <!-- Formulario -->
+  <form id="formComunidad" class="max-w-xl mx-auto space-y-4">
+    <div class="text-left">
+      <label for="nombreUsuario" class="block text-sm font-medium text-white mb-1">Tu nombre:</label>
+      <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Ej: Juan Pérez"
+             class="w-full rounded-md border-gray-300 shadow-sm focus:border-azulino focus:ring focus:ring-azulino focus:ring-opacity-50 p-2" required>
+    </div>
+
+    <div class="flex">
+      <input
+        id="correoUsuario"
+        type="email"
+        placeholder="Tu correo electrónico"
+        class="flex-grow px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none"
+        required
+      />
+      <button type="submit"
+        class="bg-azulbase text-white px-4 py-2 rounded-r-md hover:bg-azulino transition">
+        Suscribirme
+      </button>
+    </div>
+  </form>
+
+  <!-- Mensaje de confirmación -->
+  <p id="mensajeSuscripcion" class="mt-6 text-green-100 hidden">¡Gracias por suscribirte!</p>
+</section>
+
+<!-- Botón flotante de WhatsApp con estilos corregidos -->
+<div class="fixed bottom-6 right-6 z-50">
+  <a href="https://wa.me/5492215738117"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-110">
+
+    <!-- Ícono de WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 32 32" fill="currentColor">
+      <path d="M16.001 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.83.96 3.9 1.47 6.2 1.47 7.07 0 12.8-5.73 12.8-12.8s-5.73-12.8-12.8-12.8zm0 23.2c-2.01 0-3.95-.56-5.63-1.61l-.4-.24-3.92 1.03 1.05-3.82-.26-.41a10.44 10.44 0 01-1.54-5.44c0-5.77 4.7-10.48 10.48-10.48s10.48 4.7 10.48 10.48-4.7 10.48-10.48 10.48zm5.38-7.56c-.3-.15-1.77-.88-2.05-.98s-.48-.15-.68.15-.79 1-.96 1.21-.36.24-.66.08a8.33 8.33 0 01-2.4-1.47 9.49 9.49 0 01-1.69-2.13c-.18-.3 0-.47.14-.63s.32-.36.48-.54c.15-.18.32-.39.44-.61a.58.58 0 000-.55c-.15-.15-.68-1.67-.94-2.29s-.5-.53-.69-.54h-.57c-.22 0-.56.08-.86.38s-1.13 1.1-1.13 2.68 1.15 3.1 1.32 3.28c.16.16 2.27 3.43 5.5 4.81a19.25 19.25 0 001.9.7 4.56 4.56 0 002.1.14c.63-.1 1.87-.75 2.13-1.48.27-.74.27-1.35.19-1.46s-.3-.23-.6-.38z"/>
+    </svg>
+  </a>
+</div>
+
+<!--PREFOOTER -->
+
+<section class="bg-verdepetroloscuro text-white py-10 px-4 font-outfit">
+  <!-- Grid superior -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
+    <!-- CONSULTORÍA -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">CONSULTORÍA</h2>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Finanzas</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías a Emprendedores</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Gestión</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Diseño</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Comunicación</a></li>
+      </ul>
+    </div>
+
+    <!-- REDES -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">REDES</h2>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://www.instagram.com/finanzas.saludables.ar" target="_blank" class="hover:text-verdementa transition-colors">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="mt-4 text-sm leading-relaxed">
+        <p>La Plata, Argentina</p>
+        <p><a href="mailto:finanzas.saludables.emprende@gmail.com" class="hover:text-verdementa transition-colors">finanzas.saludables.emprende@gmail.com</a></p>
+        <p><a href="tel:+5492215738117" class="hover:text-verdementa transition-colors">+54 9221 573 8117</a></p>
+      </div>
+    </div>
+
+    <!-- SECCIONES -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">SECCIONES</h2>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:text-verdementa transition-colors">SANGHA</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Cursos</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Servicios</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Equipo</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- LOGO -->
+    <div class="flex items-center justify-center">
+      <div class="bg-white flex items-center justify-center rounded p-4 transition-transform duration-300 hover:scale-105" style="height: 9rem;">
+        <img src="images/logofsbold.png" alt="Logo FS" class="w-auto h-32" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Línea y grid inferior -->
+  <div class="max-w-7xl mx-auto border-t-4 border-verdementa mt-10 pt-6 grid grid-cols-1 md:grid-cols-4 gap-4 text-xs text-left">
+    <a href="politicasdeprivacidad.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Política de privacidad</a>
+    <a href="politicasdecookies.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Política de Cookies</a>
+    <a href="terminosycondiciones.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Términos y condiciones</a>
+    <p>Finanzas Saludables 2025 © Todos los derechos reservados</p>
+  </div>
+</section>
+
+
+   <!-- FOOTER -->
+<footer class="bg-white text-black text-center py-2">
+  <div class="flex justify-center items-center gap-6 mb-4 flex-wrap">
+    <div class="bg-white flex items-center justify-center rounded p-4" style="height: 4rem; width: auto;">
+    <img src="images/logo-bloms.png" alt="Logo Bloms" class="w-12 sm:w-16 h-auto" />
+  </div>
+  <p class="mb-2">© 2025 BLÖMS CONSULTORA todos los derechos reservados. Responsable de DISEÑO DE CONCEPTO, GESTION EMPRENDIMIENTO Y DISEÑO WEB</p>
+ 
+</footer>
+  
+   
+
+<!-- JS para abrir/cerrar el menú en móvil -->
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      const icon = document.getElementById('menu-icon');
+  
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+        menu.classList.toggle('flex-col');
+        menu.classList.toggle('absolute');
+        menu.classList.toggle('top-full');
+        menu.classList.toggle('left-0');
+        menu.classList.toggle('bg-[#3e2d4f]');
+        menu.classList.toggle('w-full');
+        menu.classList.toggle('p-4');
+        menu.classList.toggle('shadow-md');
+        menu.classList.toggle('z-40');
+  
+        // Cambiar icono
+        if (menu.classList.contains('hidden')) {
+          icon.innerHTML = '&#9776;'; // ☰
+        } else {
+          icon.innerHTML = '&#10005;'; // ✖
+        }
+      });
+    });
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+    } else {
+      menu.classList.add('hidden');
+    }
+  });
+  </script>
+
+<script>
+  document.getElementById('contactoMail').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombreUsuario')?.value || '[Nombre]';
+
+    const asunto = 'Consulta sobre el Coaching Finanzas Saludables';
+    const cuerpo = `Hola, me comunico para realizar una consulta sobre la Comunidad Finanzas Saludables.%0A%0AMi pregunta es:%0A%0AQuedo atento/a a su respuesta.%0A%0AMuchas gracias.%0A%0ASaludos,%0A${encodeURIComponent(nombre)}`;
+
+    const mailtoLink = `mailto:finanzas.saludables.emprende@gmail.com?subject=${encodeURIComponent(asunto)}&body=${cuerpo}`;
+
+    window.location.href = mailtoLink;
+  });
+</script>
+
+<script>
+  document.getElementById('formComunidad').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombreUsuario').value.trim();
+    const email = document.getElementById('correoUsuario').value.trim();
+
+    if (!nombre || !email) return;
+
+    // Usamos nuestra API personalizada en Vercel para ocultar la API key de SheetBest
+    const endpoint = "https://guardar-api-sheetbest.vercel.app/api/guardarSuscripcion";
+
+    const data = {
+      nombre: nombre,
+      email: email
+    };
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        document.getElementById('mensajeSuscripcion').classList.remove('hidden');
+        document.getElementById('formComunidad').reset();
+      } else {
+        alert("Hubo un error al enviar tus datos. Intentá más tarde.");
+      }
+    } catch (error) {
+      alert("Error de red. Verificá tu conexión.");
+      console.error(error);
+    }
+  });
+</script>
+
+<script>
+  document.getElementById('formComunidad').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita envío tradicional
+
+    // Aquí puedes agregar la integración con un backend o Google Forms
+
+    // Mostrar mensaje de confirmación
+    const mensaje = document.getElementById('mensajeSuscripcion');
+    mensaje.classList.remove('hidden');
+
+    // Opcional: limpiar formulario
+    this.reset();
+
+    // Opcional: ocultar mensaje después de unos segundos
+    setTimeout(() => {
+      mensaje.classList.add('hidden');
+    }, 5000);
+  });
+</script>
+
+
+  
+ 
+  </body>
+</html>
