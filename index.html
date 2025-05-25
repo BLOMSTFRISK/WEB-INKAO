@@ -77,7 +77,8 @@
 @font-face {
   font-family: 'FF Good Pro Wide Light';
   src: url('fonts/ff-good-pro-wide-light.woff2') format('woff2'),
-       url('fonts/ff-good-pro-wide-light.woff') format('woff');
+       url('fonts/ff-good-pro-wide-light.woff') format('woff'),
+        url('fonts/ff-good-pro-wide-bold.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -167,12 +168,12 @@
 >
   <!-- Logo -->
   <div class="md:w-1/2 flex justify-center">
-    <img src="images/logorectangularnegro.jpeg" alt="Logo INKAO" class="w-full max-w-lg" />
+    <img src="images/Lineal Sin Fondo + Recuadro.png" alt="Logo INKAO" class="w-full max-w-lg" />
   </div>
 
   <!-- Texto -->
   <div class="md:w-1/2 text-center md:text-left">
-    <h2 class="text-5xl md:text-7xl text-Turquesa font-bold mb-2">INKAO</h2>
+    <h1 class="text-5xl md:text-7xl text-Turquesa font-bold mb-2">INKAO</h1>
     <h2 class="text-5xl md:text-5xl text-amarillooro font-bold mb-6 leading-tight">ESTUDIO DE DISEÑO</h2>
   <p class="text-lg text-white mb-4">
     En <strong>INKAO</strong> creemos que el diseño es una herramienta transformadora, y lo abordamos desde una mirada integral, estratégica y consciente. 
@@ -192,13 +193,13 @@
 
    <!-- Botones en fila -->
 <div class="grid grid-cols-3 gap-4 max-w-4xl mx-auto md:mx-0 mt-6">
-  <a href="#estudios" class="h-12 flex items-center justify-center bg-Turquesa text-white px-2 rounded-xl text-sm font-bold shadow hover:bg-amarillooro transition text-center">
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdepetroloscuro text-white px-2 rounded-lg text-sm font-bold shadow hover:bg-amarillooro transition text-center">
     DISEÑO
   </a>
-  <a href="#estudios" class="h-12 flex items-center justify-center bg-Turquesa text-white px-2 rounded-m text-sm font-bold shadow hover:bg-amarillooro transition text-center">
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdepetroloscuro text-white px-2 rounded-lg text-sm font-bold shadow hover:bg-amarillooro transition text-center">
     CURSOS
   </a>
-  <a href="#estudios" class="h-12 flex items-center justify-center bg-Turquesa text-white px-2 rounded-lg text-sm font-bold shadow hover:bg-amarillooro transition text-center">
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdepetroloscuro text-white px-2 rounded-lg text-sm font-bold shadow hover:bg-amarillooro transition text-center">
     SERVICIOS
   </a>
 </div>
@@ -234,8 +235,8 @@
 
    <section id="sobre" class="py-20 px-6 bg-black text-center">
   <div class="mx-auto px-6 py-20 bg-gris rounded-2xl max-w-3xl">
-    <h2 class="text-5xl text-white font-semibold mb-6">Sobre INKAO</h2>
-     <div class="border-t-4 border-amarillo mt-10 pt-6 text-xs text-left grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+    <h2 class="text-3xl text-white font-semibold mb-6">Sobre INKAO</h2>
+     <div class="border-t-2 border-amarillo mt-10 pt-6 text-xs text-left grid grid-cols-1 md:grid-cols-4 gap-4"></div>
     <div class="text-white text-lg leading-relaxed space-y-6 text-justify sm:text-left">
    <p><strong>INKAO</strong> es un estudio de diseño que acompaña a emprendedores, cooperativas, profesionales y empresas en el desarrollo estratégico de sus productos, marcas y experiencias. Integra diseño industrial, branding, modelado 3D y tecnologías de fabricación digital, con un enfoque centrado en las personas, el contexto y el impacto real.</p>
 
@@ -254,114 +255,90 @@
   <div class="text-center mt-8">
     <a href="formulario.html"
        target="_blank" rel="noopener noreferrer"
-       class="inline-block bg-Turquesa text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-cyanooscuroelegante transition">
-      Quiero formar parte de la comunidad
+       class="inline-block bg-verdepetroloscuro text-white text-m font-semibold px-4 py-3 rounded-lg shadow-md hover:bg-amarillooro transition">
+      Quiero formar parte
     </a>
   </div>
 </section>
 
-   <!-- Sección de estudios -->
-<section id="estudios" class="py-16 px-6 bg-azulverdoso">
-  <h2 class="text-5xl font-semibold text-center mb-16 text-white">LO QUE TENEMOS PARA OFRECERTE...</h2>
+<!-- Sección de estudios -->
+<section id="estudios" class="py-10 px-6 bg-verdepetroloscuro">
+  <h2 class="text-3xl font-semibold text-center mb-10 text-white">LO QUE TENEMOS PARA OFRECERTE...</h2>
+   <div class="border-t-2 border-amarillo mt-10 pt-6 text-xs text-left grid grid-cols-1 md:grid-cols-4 gap-4"></div>
 
-  <div class="space-y-12 max-w-6xl mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-6xl mx-auto">
 
-     <!-- SANGHA -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepetroleo hover:scale-105 transition">
-        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
-          <div class="w-20 h-20 flex items-center justify-center">
-            <i class="fas fa-spa text-[5rem]"></i>
-          </div>
+    <!-- Tarjeta 1 -->
+    <div>
+      <div class="bg-cyanooscuroelegante text-white p-6 rounded-lg shadow hover:bg-Gris/30 hover: transition-all duration-300 transform hover:scale-105 text-center">
+        <div class="text-6xl mb-4">
+        <i class="fas fa-drafting-compass"></i>
         </div>
-        <h3 class="text-xl font-semibold mb-1">SANGHA</h3>
-        <p class="text-m text-white/80 mb-4">Suscribite a la comunidad de emprendedores que potencia tu crecimiento.</p>
-        <a href="unidadsangha.html" target="_blank" class="bg-white text-verdepetroleo font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
-          Ir al sitio
-        </a>
+        <h3 class="text-m font-bold mb-2">DISEÑO DE PRODUCTO Y GESTION DE DISEÑO</h3>
+        <p class="mb-4">Diseño industrial aplicado a la realidad con factibilidad tecnológica, productiva y financiera</p>
+        <br>
+        <a href="unidadsangha.html" target="_blank" class="bg-white text-Turquesa font-bold px-4 py-2 rounded-xl hover:bg-gray-100 transition">Saber más</a>
+      <br>
+      <br>
       </div>
-      <div class="text-white text-lg leading-relaxed">
-        <p>En nuestra comunidad encontrarás inspiración, una red de apoyo genuina y experiencias compartidas que enriquecen tu camino. La Sangha es mucho más que un grupo: es un espacio vivo, dinámico y amoroso, pensado para nutrir tu motivación, acompañarte en los desafíos y fortalecer tu conexión con otros emprendedores que, como vos, buscan crecer de manera consciente y sostenible. Aquí podrás compartir tus logros, dudas y aprendizajes, sabiendo que siempre vas a tener un lugar donde ser escuchado, impulsado y comprendido.
-        </p>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div>
+      <div class="bg-cyanooscuroelegante text-white p-6 rounded-lg shadow hover:bg-Gris/30 hover: transition-all duration-300 transform hover:scale-105 text-center">
+        <div class="text-6xl mb-4">
+          <i class="fas fa-people-group"></i>
         </div>
+        <h3 class="text-m font-bold mb-2">EQUIPO DE PROFESIONALES</h3>
+        <p class="mb-4">Conocé a los profesionales y a los estudios asociados, que conforman el equipo de trabajo.</p>
+        <br>
+        <a href="unidadsangha.html#equipoprofesionales" target="_blank" class="bg-white text-Turquesa font-bold px-4 py-2 rounded-xl hover:bg-gray-100 transition">Conocenos</a>
+      <br>
+      <br>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div>
+       <div class="bg-cyanooscuroelegante text-white p-6 rounded-lg shadow hover:bg-Gris/30 hover: transition-all duration-300 transform hover:scale-105 text-center">
+        <div class="text-6xl mb-4">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+        <h3 class="text-m font-bold mb-2">CURSOS Y CAPACITACIONES</h3>
+        <p class="mb-4">Profundizá conocimientos en Modelado 3D, fabricación digital, gestión y diseño de productos.</p>
+        <br>
+        <a href="cursossangha.html" target="_blank" class="bg-white text-Turquesa font-bold px-4 py-2 rounded-xl hover:bg-gray-100 transition">Ir al sitio</a>
+     <br>
+        <br>
+      </div>
      </div>
 
-
-    <!-- EQUIPO -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdeingles hover:scale-105 transition">
-        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
-          <div class="w-16 h-16 flex items-center justify-center">
-            <i class="fas fa-people-group text-[5rem]"></i>
-          </div>
+    <!-- Tarjeta 4 -->
+    <div>
+      <div class="bg-cyanooscuroelegante text-white p-6 rounded-lg shadow hover:bg-Gris/30 hover: transition-all duration-300 transform hover:scale-105 text-center">
+        <div class="text-6xl mb-4">
+          <i class="fas fa-handshake"></i>
         </div>
-        <h3 class="text-xl font-semibold mb-1">EQUIPO DE TRABAJO</h3>
-        <p class="text-m text-white/80 mb-4">Conocé a los profesionales que conforman el equipo de Vero.</p>
-        <a href="unidadsangha.html#equipoprofesionales" target="_blank" class="bg-white text-verdeingles font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
-          Conocenos
-        </a>
+        <h3 class="text-m font-bold mb-2">ASESORÍAS PERSONALIZADAS</h3>
+        <p class="mb-4">Consultoría y acompañamiento para emprendedores y empresas.</p>
+        <br>
+        <a href="unidadsangha.html#equipoprofesionales" target="_blank" class="bg-white text-Turquesa font-bold px-4 py-2 rounded-xl hover:bg-gray-100 transition">Agendá tu turno</a>
+      <br>
+        <br> 
       </div>
-      <div class="text-white text-lg leading-relaxed">
-        <p> Detrás de cada servicio y propuesta hay un equipo comprometido, humano y apasionado que trabaja con un propósito claro: acompañarte en la construcción de un bienestar financiero real, consciente y duradero. Cada integrante aporta su mirada, experiencia y vocación para ofrecerte un enfoque integral, cercano y personalizado. Conocelos, descubrí cómo trabajan en conjunto y por qué forman una red sólida que te impulsa a tomar decisiones más informadas, equilibradas y alineadas con tus valores y objetivos.
-    </p>
         </div>
-     </div> 
 
-
-
-    <!-- CURSOS -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepalta hover:scale-105 transition">
-        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
-          <div class="w-16 h-16 flex items-center justify-center">
-            <i class="fas fa-chalkboard-teacher text-white text-[4.4rem]"></i>
-          </div>
-        </div>
-        <h3 class="text-xl font-semibold mb-1">CURSOS</h3>
-        <p class="text-m text-white/80 mb-4">Profundiza conocimientos en finanzas, inversiones, ecommerce, gestión y diseño de productos.</p>
-        <a href="cursossangha.html" target="_blank" class="bg-white text-verdepalta font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
-          Ir al sitio
-        </a>
-      </div>
-      <div class="text-white text-lg leading-relaxed">
-        <p>Estos cursos están diseñados para acompañarte en cada etapa de tu camino emprendedor, brindándote las herramientas necesarias para profesionalizar y fortalecer tu proyecto. Ya sea que estés dando tus primeros pasos o que tengas un emprendimiento consolidado, siempre hay nuevas habilidades, enfoques y conocimientos que pueden marcar la diferencia. Nuestra propuesta formativa combina teoría accesible, práctica aplicada y una mirada integral que pone en el centro tu crecimiento personal y profesional. Porque creemos que emprender también es una forma de desarrollo humano.
-    </p>
-        </div>
-     </div>
-
-
-    <!-- ASESORIAS -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepetroseco hover:scale-105 transition">
-        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
-          <div class="w-16 h-16 flex items-center justify-center">
-            <i class="fas fa-handshake text-[4.4rem]"></i>
-          </div>
-        </div>
-        <h3 class="text-xl font-semibold mb-1">ASESORÍAS PERSONALIZADAS</h3>
-        <p class="text-m text-white/80 mb-4">Consultoría y acompañamiento para emprendedores y empresas.</p>
-        <a href="unidadsangha.html#equipoprofesionales" target="_blank" class="bg-white text-verdepetroseco font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
-          Agendá tu turno
-        </a>
-      </div>
-      <div class="text-white text-lg leading-relaxed">
-        <p>  Trabajamos de manera personalizada, uno a uno, para comprender en detalle tu situación financiera actual, tus desafíos y tus metas. A través de un enfoque cercano y sin juicios, te ayudamos a tomar decisiones más claras, seguras y alineadas con tus verdaderos objetivos. Ya sea que necesites ordenar tus finanzas, planificar inversiones, salir de deudas o simplemente ganar mayor conciencia sobre tus hábitos económicos, nuestro acompañamiento está pensado para empoderarte, brindarte claridad y construir un camino sostenible hacia el bienestar financiero.  </p>
-        </div>
-     </div>
-
-
-      </div>
+  </div>
 </section>
 
-   
 
-
+  
     
 <!-- Comunidad -->
 <section id="comunidad" class="py-20 px-6 bg-verdeingles text-center">
-  <h2 class="text-5xl font-semibold mb-6 text-white">Sumate a FINANZAS SALUDABLES</h2>
+  <h2 class="text-3xl font-semibold mb-6 text-white">Sumate a las novedades de INKAO</h2>
   <p class="max-w-xl mx-auto mb-6 text-lg text-white">
-    Recibí recursos, novedades y muchas cosas más sobre nuestro ecosistema emprendedor.
+    Recibí recursos, novedades y muchas cosas más que te suman semana a semana.
   </p>
 
   <!-- Formulario -->
@@ -381,7 +358,7 @@
         required
       />
       <button type="submit"
-        class="bg-azulbase text-white px-4 py-2 rounded-r-md hover:bg-azulino transition">
+        class="bg-amarillooro text-white px-4 py-2 rounded-r-md hover:bg-Turquesa transition">
         Suscribirme
       </button>
     </div>
@@ -393,7 +370,7 @@
 
 <!-- Botón flotante de WhatsApp con estilos corregidos -->
 <div class="fixed bottom-6 right-6 z-50">
-  <a href="https://wa.me/5492215738117"
+  <a href="https://wa.me/5492215916442"
      target="_blank"
      rel="noopener noreferrer"
      class="flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-110">
@@ -415,11 +392,11 @@
     <div>
       <h2 class="text-lg font-bold mb-3">CONSULTORÍA</h2>
       <ul class="space-y-1">
-        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Finanzas</a></li>
-        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías a Emprendedores</a></li>
-        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Gestión</a></li>
-        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Diseño</a></li>
-        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Comunicación</a></li>
+        <li><a href="#" class="hover:text-amarillooro transition-colors">Asesorías en Diseño</a></li>
+        <li><a href="#" class="hover:text-amarillooro transition-colors">Asesorías a Emprendedores</a></li>
+        <li><a href="#" class="hover:text-amarillooro transition-colors">Asesorías en Gestión</a></li>
+        <li><a href="#" class="hover:text-amarillooro transition-colors">Asesorías en Fabricacion Digital</a></li>
+        <li><a href="#" class="hover:text-amarillooro transition-colors">Asesorías en Comunicación</a></li>
       </ul>
     </div>
 
@@ -427,14 +404,14 @@
     <div>
       <h2 class="text-lg font-bold mb-3">REDES</h2>
       <div class="flex space-x-4 text-xl">
-        <a href="https://www.instagram.com/finanzas.saludables.ar" target="_blank" class="hover:text-verdementa transition-colors">
+        <a href="https://www.instagram.com/inkao_estudio/?hl=es" target="_blank" class="hover:text-amarillooro transition-colors">
           <i class="fab fa-instagram"></i>
         </a>
       </div>
       <div class="mt-4 text-sm leading-relaxed">
         <p>La Plata, Argentina</p>
-        <p><a href="mailto:finanzas.saludables.emprende@gmail.com" class="hover:text-verdementa transition-colors">finanzas.saludables.emprende@gmail.com</a></p>
-        <p><a href="tel:+5492215738117" class="hover:text-verdementa transition-colors">+54 9221 573 8117</a></p>
+        <p><a href="mailto:finanzas.saludables.emprende@gmail.com" class="hover:text-amarillooro transition-colors">inkao.estudio@gmail.com</a></p>
+        <p><a href="tel:+5492215738117" class="hover:text-amarillooro transition-colors">+54 9221 591 6442</a></p>
       </div>
     </div>
 
@@ -442,7 +419,7 @@
     <div>
       <h2 class="text-lg font-bold mb-3">SECCIONES</h2>
       <ul class="space-y-1">
-        <li><a href="#" class="hover:text-verdementa transition-colors">SANGHA</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorias</a></li>
         <li><a href="#" class="hover:text-verdementa transition-colors">Cursos</a></li>
         <li><a href="#" class="hover:text-verdementa transition-colors">Servicios</a></li>
         <li><a href="#" class="hover:text-verdementa transition-colors">Equipo</a></li>
@@ -452,18 +429,17 @@
 
     <!-- LOGO -->
     <div class="flex items-center justify-center">
-      <div class="bg-white flex items-center justify-center rounded p-4 transition-transform duration-300 hover:scale-105" style="height: 9rem;">
-        <img src="images/logofsbold.png" alt="Logo FS" class="w-auto h-32" />
+        <img src="images/Lineal Sin Fondo + Recuadro.png" alt="Logo FS" class="w-auto h-20" />
       </div>
     </div>
   </div>
 
   <!-- Línea y grid inferior -->
-  <div class="max-w-7xl mx-auto border-t-4 border-verdementa mt-10 pt-6 grid grid-cols-1 md:grid-cols-4 gap-4 text-xs text-left">
-    <a href="politicasdeprivacidad.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Política de privacidad</a>
-    <a href="politicasdecookies.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Política de Cookies</a>
-    <a href="terminosycondiciones.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Términos y condiciones</a>
-    <p>Finanzas Saludables 2025 © Todos los derechos reservados</p>
+  <div class="max-w-7xl mx-auto border-t-2 border-white mt-10 pt-6 grid grid-cols-1 md:grid-cols-4 gap-4 text-xs text-left">
+    <a href="politicasdeprivacidad.html" target="_blank" rel="noopener noreferrer" class="hover:text-amarillooro transition-colors">Política de privacidad</a>
+    <a href="politicasdecookies.html" target="_blank" rel="noopener noreferrer" class="hover:text-amarillooro transition-colors">Política de Cookies</a>
+    <a href="terminosycondiciones.html" target="_blank" rel="noopener noreferrer" class="hover:text-amarillooro transition-colors">Términos y condiciones</a>
+    <p>INKAO 2025 © Todos los derechos reservados</p>
   </div>
 </section>
 
