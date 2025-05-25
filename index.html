@@ -23,67 +23,77 @@
     
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    
-      <!-- Tailwind CSS -->
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-              
-                celeste: '#0c6d99',
-                celestonoscuro: '#1394ad',
-                azulpetrol: '#168AAD',
-                azulverdoso: '#34A0A4',
-                verdepetroloscuro: '#036666',
-                verdepetroleo: '#14746F',
-                verdepetro: '#248277',
-                amarillooro: '#D7B04B',
-                amarillo: '#FFCF56',
-                fondocalido: '#FDFCFB',
-                black: '#000000', 
-                Gris: '#4d4d4d', 
-                Amarillo: '#f3be13', 
-                Turquesa: '#26a7a6' ,
-                cyanoscuroelegante: '#006D77',
-                turquesaprofundo: '#007C91',
 
-              },
-              fontSize: {
-                '2xl': '1.5rem',
-                '3xl': '1.875rem',
-                '4xl': '2.25rem',
-                '5xl': '3rem',
-                '6xl': '3.75rem',
-              },
-              fontWeight: {
-                normal: 400,
-                medium: 500,
-                bold: 700,
-              },
-              fontFamily: {
-               sans: ['"FF Good Pro Wide Light"', 'sans-serif'],
-              },
-            },
-          },
-        };
-      </script>
+      <!--googlefonts -->
+
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
 
     
-      <!-- Animaciones -->
-      <style>
 
+    <!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          celeste: '#0c6d99',
+          celestonoscuro: '#1394ad',
+          azulpetrol: '#168AAD',
+          azulverdoso: '#34A0A4',
+          verdepetroloscuro: '#036666',
+          verdepetroleo: '#14746F',
+          verdepetro: '#248277',
+          amarillooro: '#D7B04B',
+          amarillo: '#FFCF56',
+          fondocalido: '#FDFCFB',
+          black: '#000000',
+          Gris: '#4d4d4d',
+          Amarillo: '#f3be13',
+          Turquesa: '#26a7a6',
+          cyanoscuroelegante: '#006D77',
+          turquesaprofundo: '#007C91',
+        },
+        fontSize: {
+          '2xl': '1.5rem',
+          '3xl': '1.875rem',
+          '4xl': '2.25rem',
+          '5xl': '3rem',
+          '6xl': '3.75rem',
+        },
+        fontWeight: {
+          normal: 400,
+          medium: 500,
+          bold: 700,
+        },
+        fontFamily: {
+          sans: ['"FF Good Pro Wide Light"', 'sans-serif'],
+          condblack: ['"FF Good Pro Cond Black"', 'sans-serif'],
+          'barlow-condensed': ['"Barlow Condensed"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<!-- FUENTES PERSONALIZADAS -->
+<style>
 @font-face {
-  font-family: 'FF Good Pro Wide Light';
-  src: url('fonts/ff-good-pro-wide-light.woff2') format('woff2'),
-       url('fonts/ff-good-pro-wide-light.woff') format('woff'),
-        url('fonts/ff-good-pro-wide-bold.woff') format('woff');
-  font-weight: 300;
+  font-family: 'FF Good Pro Cond Black';
+  src: url('fonts/ff-good-pro-cond-black.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'FF Good Pro Wide Light';
+  src: url('fonts/ff-good-pro-wide-light.woff2') format('woff2'),
+       url('fonts/ff-good-pro-wide-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
         html {
           scroll-behavior: smooth;
         }
@@ -173,7 +183,8 @@
 
   <!-- Texto -->
   <div class="md:w-1/2 text-center md:text-left">
-    <h1 class="text-5xl md:text-7xl text-Turquesa font-bold mb-2">INKAO</h1>
+    <h1 class="text-6xl md:text-8xl text-verdepetroleo font-barlow-condensed mb-2">INKAO</h1>
+
     <h2 class="text-5xl md:text-5xl text-amarillooro font-bold mb-6 leading-tight">ESTUDIO DE DISEÑO</h2>
   <p class="text-lg text-white mb-4">
     En <strong>INKAO</strong> creemos que el diseño es una herramienta transformadora, y lo abordamos desde una mirada integral, estratégica y consciente. 
